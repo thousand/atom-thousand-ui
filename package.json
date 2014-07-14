@@ -1,8 +1,8 @@
 {
-  "name": "atom-dark-ui",
+  "name": "atom-thousand-ui",
   "theme": "ui",
-  "version": "0.32.0",
-  "description": "Default dark theme for interface components",
+  "version": "0.1.0",
+  "description": "thousand-y dark theme for interface components",
   "license": "MIT",
   "repository": "https://github.com/atom/atom-dark-ui",
   "engines": {
