@@ -1,3 +1,3 @@
 # Thousand's Atom UI theme
 
-** Seriously in progress, yo. **
+**Seriously in progress, yo.**

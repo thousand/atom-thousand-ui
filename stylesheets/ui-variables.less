@@ -1,7 +1,7 @@
 // Colors
 
 @text-color: #aaa;
-@text-color-subtle: #555;
+@text-color-subtle: #888;
 @text-color-highlight: #fff;
 @text-color-selected: @text-color-highlight;
 
@@ -20,10 +20,10 @@
 @background-color-success: #17ca65;
 @background-color-warning: #ffaa2c;
 @background-color-error: #c00;
-@background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-highlight: rgba(255, 255, 255, 0.1);
+@background-color-selected: darken(#4182C4, 2%);
 
-@app-background-color: #333;
+@app-background-color: #262626;
 
 @base-background-color: lighten(@tool-panel-background-color, 5%);
 @base-border-color: rgba(0, 0, 0, 0.5);
@@ -31,10 +31,10 @@
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: rgba(0, 0, 0, 0.5);
 
-@input-background-color: #212224;
+@input-background-color: @app-background-color;
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #1d1f21;
+@tool-panel-background-color: darken(@app-background-color, 5%);
 @tool-panel-border-color: @base-border-color;
 
 @inset-panel-background-color: #161719;
@@ -46,18 +46,18 @@
 @overlay-background-color: #202123;
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
+@button-background-color: @app-background-color;
 @button-background-color-hover: lighten(@button-background-color, 5%);
 @button-background-color-selected: #5c6064;
-@button-border-color: @base-border-color;
+@button-border-color: @tool-panel-background-color;
 
-@tab-bar-background-color: #222;
+@tab-bar-background-color: darken(@app-background-color, 10%);
 @tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-background-color: @app-background-color;
+@tab-background-color-active: @app-background-color;
+@tab-border-color: darken(@tab-background-color-active, 10%);
 
-@tree-view-background-color: @tool-panel-background-color;
+@tree-view-background-color: lighten(@tool-panel-background-color, 2%);
 @tree-view-border-color: @tool-panel-border-color;
 
 @scrollbar-background-color: rgba(42, 42, 42, 0.5);
@@ -72,17 +72,17 @@
 
 // Sizes
 
-@font-size: 11px;
+@font-size: 12px;
 
 @disclosure-arrow-size: 12px;
 
 @component-padding: 10px;
 @component-icon-padding: 5px;
-@component-icon-size: 16px;
-@component-line-height: 25px;
+@component-icon-size: 12px;
+@component-line-height: 21px;
 @component-border-radius: 2px;
 
-@tab-height: 26px;
+@tab-height: 25px;
 
 
 // Other
