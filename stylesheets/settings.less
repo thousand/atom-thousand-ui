@@ -1,0 +1,101 @@
+.settings-view {
+  .text {
+    color: inherit;
+  }
+
+  .config-menu {
+    box-shadow: none;
+    background-color: @app-background-color;
+    color: @text-color;
+    border-right: 1px solid lighten(@input-background-color, 10%);
+
+    .nav {
+      > li {
+        > a {
+          color: @text-color;
+          &:hover {
+            background-color: lighten(@app-background-color, 12%);
+            color: lighten(@text-color, 8%);
+            .package-author {
+              color: darken(@text-color, 7%)
+            }
+          }
+
+          .package-author {
+            color: darken(@text-color, 15%)
+          }
+        }
+      }
+    }
+
+    .panels-menu .panel-menu-separator {
+      border-bottom-color: lighten(@input-background-color, 10%);
+    }
+
+    .editor-container .editor.mini {
+      background-color: lighten(@input-background-color, 10%);
+      &.is-focused {
+        color: @text-color-highlight;
+        background-color: lighten(@input-background-color, 15%);
+
+      }
+    }
+  }
+
+  .panels {
+    background: @app-background-color;
+    color: @text-color;
+  }
+
+  section, .section {
+    .section-heading,
+    .section-heading:first-child {
+      color: lighten(@text-color, 5%);
+      border-bottom-color: lighten(@input-background-color, 10%);
+
+    }
+  }
+
+  .settings-panel label {
+    color: @text-color;
+  }
+
+  .editor-container .editor {
+    &.mini {
+      color: @text-color-highlight;
+      background-color: lighten(@input-background-color, 10%);
+      border-radius: @component-border-radius;
+
+      .cursor { border-color: #fff; }
+      .selection .region { background-color: lighten(@input-background-color, 15%); }
+      &.is-focused {
+        color: @text-color-highlight;
+        background-color: lighten(@input-background-color, 15%);
+        .selection .region { background-color: desaturate(@background-color-info, 50%); }
+      }
+    }
+  }
+
+  .form-control {
+    display: inline-block;
+    background: lighten(@input-background-color, 10%);
+    outline: none;
+    border: none;
+  }
+
+  select.form-control {
+    -webkit-appearance: none;
+    color: @text-color;
+  }
+
+  .table {
+    > thead, > tbody, > tfoot {
+      > tr {
+        > td, > th {
+          border-color: lighten(@input-background-color, 10%);
+        } 
+      }
+    }
+  }
+
+}
